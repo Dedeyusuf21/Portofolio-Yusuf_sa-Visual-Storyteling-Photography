@@ -10,16 +10,18 @@
     body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
     h1,h2,h3 { font-family: 'Playfair Display', serif; }
     .portfolio-img:hover { transform: scale(1.05); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+    .card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
     .gradient-button { background: linear-gradient(to right, #4ade80, #16a34a); }
     .gradient-button:hover { transform: scale(1.05); }
+    .price-card { background: linear-gradient(135deg, #fef9f0, #f5f5f5); border-radius: 1rem; transition: all 0.3s ease; }
+    .price-card:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
   </style>
 </head>
 <body class="text-gray-800">
 
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white h-[80vh] flex flex-col items-center justify-center text-center">
-    <img src="https://drive.google.com/uc?export=view&id=1VKnutKLOiZEpXd_Bx36OPolocn0iu9wX" alt="Logo Yusuf Visual" class="absolute top-10 w-28 h-28 rounded-full border-4 border-white shadow-2xl"/>
+    <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/LOGO%20DEDE%202.png?raw=true" alt="Logo Yusuf Visual" class="absolute top-10 w-28 h-28 rounded-full border-4 border-white shadow-2xl"/>
     <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Yusuf_sa Visual & Cinematic Storytelling</h1>
     <p class="text-lg md:text-xl max-w-2xl mb-6 drop-shadow-md">
       Mengabadikan momen berharga melalui fotografi dan videografi dengan sentuhan elegan, autentik, dan penuh emosi.
@@ -39,23 +41,36 @@
   <section id="portfolio" class="py-16 px-6 md:px-20 bg-white">
     <h2 class="text-3xl font-bold text-center mb-10">Portfolio Karya</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Engagement 1" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engegement%202.jpg?raw=true" alt="Engagement 2" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" alt="Tingkeban 1" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" alt="Wisuda 1" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%202.jpg?raw=true" alt="Wisuda 2" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Engagement" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engegement%202.jpg?raw=true" alt="Engagement" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" alt="Tingkeban" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" alt="Wisuda" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%202.jpg?raw=true" alt="Wisuda" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
       <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/pelengkap%20%20(3).jpg?raw=true" alt="Pelengkap" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
     </div>
   </section>
 
   <!-- Paket & Harga -->
-  <section id="paket" class="py-16 px-6 md:px-20 bg-gray-50">
-    <h2 class="text-3xl font-bold text-center mb-6">Paket & Harga</h2>
-    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-      
+  <section id="paket" class="py-16 px-6 md:px-20 bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-10">Paket & Harga</h2>
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+      <!-- Paket Engagement -->
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Engagement" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Engagement Paket – Rp900.000</h3>
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+          <li>1 Fotografer + 1 Videografer</li>
+          <li>Durasi 4–6 jam</li>
+          <li>50 Foto edit premium + Highlight Video</li>
+          <li>Softcopy via Google Drive</li>
+        </ul>
+      </div>
+
       <!-- Paket Wedding Silver Cinematic -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Wedding Silver Cinematic – Rp1.000.000</h3>
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding.jpg?raw=true" alt="Wedding" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Wedding Silver Cinematic – Rp1.000.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Videografer Profesional</li>
           <li>Durasi syuting: 6 jam</li>
@@ -66,8 +81,9 @@
       </div>
 
       <!-- Paket Wedding Foto -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Wedding Foto Paket – Rp800.000</h3>
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding.jpg?raw=true" alt="Wedding Foto" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Wedding Foto Paket – Rp800.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
           <li>Dokumentasi akad / resepsi 3–6 jam</li>
@@ -78,8 +94,9 @@
       </div>
 
       <!-- Paket Prewedding -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Prewedding – Rp1.200.000</h3>
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/prewedding.jpg?raw=true" alt="Prewedding" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Prewedding – Rp1.200.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer + 1 Videografer</li>
           <li>Durasi 6 jam di lokasi outdoor</li>
@@ -89,20 +106,10 @@
         </ul>
       </div>
 
-      <!-- Paket Engagement -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Engagement Paket – Rp900.000</h3>
-        <ul class="list-disc pl-6 space-y-2 text-gray-700">
-          <li>1 Fotografer + 1 Videografer</li>
-          <li>Durasi 4–6 jam</li>
-          <li>50 Foto edit premium + Highlight Video</li>
-          <li>Softcopy via Google Drive</li>
-        </ul>
-      </div>
-
       <!-- Paket Wisuda -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Wisuda Paket – Rp750.000</h3>
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" alt="Wisuda" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Wisuda Paket – Rp750.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
           <li>Dokumentasi Wisuda indoor/outdoor 3–4 jam</li>
@@ -112,8 +119,9 @@
       </div>
 
       <!-- Paket Tingkeban -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Tingkeban Paket – Rp650.000</h3>
+      <div class="price-card p-6 shadow-lg">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" alt="Tingkeban" class="rounded-xl mb-4 shadow-md"/>
+        <h3 class="text-2xl font-semibold mb-2">Tingkeban Paket – Rp650.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
           <li>Dokumentasi acara 3–5 jam</li>
@@ -122,21 +130,11 @@
         </ul>
       </div>
 
-      <!-- Paket Lainnya / Custom -->
-      <div class="rounded-3xl shadow-xl p-6 bg-white card transition-transform duration-500">
-        <h3 class="text-2xl font-semibold mb-4">Custom Paket / Event Lain – Hubungi Kami</h3>
-        <ul class="list-disc pl-6 space-y-2 text-gray-700">
-          <li>Foto & Video untuk acara ulang tahun, corporate, atau event lainnya</li>
-          <li>Durasi & harga fleksibel sesuai kebutuhan</li>
-          <li>Softcopy & cetak sesuai kesepakatan</li>
-        </ul>
-      </div>
-
     </div>
   </section>
 
   <!-- Kontak & Pembayaran -->
-  <section id="kontak" class="py-16 px-6 md:px-20 bg-white text-center">
+  <section id="kontak" class="py-16 px-6 md:px-20 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 text-center">
     <h2 class="text-3xl font-bold mb-6">Hubungi & Pembayaran</h2>
     <p class="mb-6">Tertarik bekerja sama? Silakan hubungi kami melalui media sosial atau transfer pembayaran:</p>
 
@@ -146,35 +144,92 @@
       <a href="https://instagram.com/yusuf_sa_2" target="_blank" class="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 transition">Instagram</a>
       <a href="https://www.tiktok.com/@yusuf_sa_" target="_blank" class="bg-black text-white px-6 py-3 rounded-full shadow-md hover:bg-gray-800 transition">TikTok</a>
     </div>
-
     <!-- Bank & E-Wallet -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
       <!-- Bank BCA -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/BCA.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">BCA</p><p>A/N: DEDE YUSUP</p><p>No: 1852234088</p></div>
+        <div class="text-left">
+          <p class="font-semibold">BCA</p>
+          <p>A/N: DEDE YUSUP</p>
+          <p>No: 1852234088</p>
+        </div>
       </div>
+
       <!-- Bank BNI -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/BNI.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">BNI</p><p>A/N: DEDE YUSUP</p><p>No: 1234567890</p></div>
+        <div class="text-left">
+          <p class="font-semibold">BNI</p>
+          <p>A/N: DEDE YUSUP</p>
+          <p>No: 1234567890</p>
+        </div>
       </div>
+
       <!-- Bank BRI -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/BRI.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">BRI</p><p>A/N: DEDE YUSUP</p><p>No: 610301037470533</p></div>
+        <div class="text-left">
+          <p class="font-semibold">BRI</p>
+          <p>A/N: DEDE YUSUP</p>
+          <p>No: 610301037470533</p>
+        </div>
       </div>
+
       <!-- Bank Mandiri -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/MANDIRI.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">Mandiri</p><p>A/N: DEDE YUSUP</p><p>No: 1234567890</p></div>
+        <div class="text-left">
+          <p class="font-semibold">Mandiri</p>
+          <p>A/N: DEDE YUSUP</p>
+          <p>No: 1234567890</p>
+        </div>
       </div>
+
       <!-- Bank SEABANK -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/SEA%20BANK%20.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">SEABANK</p><p>A/N: DEDE YUSUP</p><p>No: 0987654321</p></div>
+        <div class="text-left">
+          <p class="font-semibold">SEABANK</p>
+          <p>A/N: DEDE YUSUP</p>
+          <p>No: 0987654321</p>
+        </div>
       </div>
+
       <!-- E-Wallet DANA -->
-      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-xl card transition-transform duration-500">
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
         <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/DANA.png?raw=true" class="w-12 h-12"/>
-        <div class="text-left"><p class="font-semibold">DANA</p><p>No: 08123456789</p></div>
+        <div class="text-left">
+          <p class="font-semibold">DANA</p>
+          <p>No: 08123456789</p>
+        </div>
+      </div>
+
+      <!-- E-Wallet GoPay -->
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/GOPAY.png?raw=true" class="w-12 h-12"/>
+        <div class="text-left">
+          <p class="font-semibold">GoPay</p>
+          <p>No: 08123456789</p>
+        </div>
+      </div>
+
+      <!-- E-Wallet Shopeepay -->
+      <div class="flex items-center gap-4 p-4 bg-white rounded-3xl shadow-lg hover:scale-105 transition transform duration-300">
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/SHOPEEPAY.png?raw=true" class="w-12 h-12"/>
+        <div class="text-left">
+          <p class="font-semibold">Shopeepay</p>
+          <p>No: 08123456789</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-8 text-center bg-gray-800 text-white">
+    <p>© 2025 Yusuf_sa Visual & Cinematic Storytelling. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
