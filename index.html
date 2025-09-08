@@ -9,20 +9,26 @@
   <style>
     body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
     h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    /* Hero pattern */
+    .hero-bg {
+      background: linear-gradient(to bottom right, #1f2937, #4b5563);
+      background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,0.05), rgba(255,255,255,0.05) 1px, transparent 1px, transparent 20px);
+    }
     .portfolio-img:hover { transform: scale(1.05); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-    .card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
-    .gradient-button { background: linear-gradient(to right, #4ade80, #16a34a); }
-    .gradient-button:hover { transform: scale(1.05); }
     .price-card { background: linear-gradient(135deg, #fef9f0, #f5f5f5); border-radius: 1rem; transition: all 0.3s ease; }
     .price-card:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+    .gradient-button { background: linear-gradient(to right, #4ade80, #16a34a); }
+    .gradient-button:hover { transform: scale(1.05); }
   </style>
 </head>
 <body class="text-gray-800">
 
   <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white h-[80vh] flex flex-col items-center justify-center text-center">
-    <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/LOGO%20DEDE%202.png?raw=true" alt="Logo Yusuf Visual" class="absolute top-10 w-28 h-28 rounded-full border-4 border-white shadow-2xl"/>
-    <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Yusuf_sa Visual & Cinematic Storytelling</h1>
+  <section class="relative hero-bg text-white h-[80vh] flex flex-col items-center justify-center text-center">
+    <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/LOGO%20DEDE%202.png?raw=true" 
+         alt="Logo Yusuf Visual" 
+         class="mb-6 w-64 h-auto shadow-lg"/>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Yusuf_sa Visual & Cinematic Storytelling</h1>
     <p class="text-lg md:text-xl max-w-2xl mb-6 drop-shadow-md">
       Mengabadikan momen berharga melalui fotografi dan videografi dengan sentuhan elegan, autentik, dan penuh emosi.
     </p>
@@ -33,7 +39,7 @@
   <section id="tentang" class="py-16 px-6 md:px-20 bg-gray-50">
     <h2 class="text-3xl font-bold text-center mb-6">Tentang Kami</h2>
     <p class="text-center max-w-3xl mx-auto">
-      Kami adalah vendor fotografi dan videografi dengan semangat untuk mengabadikan momen sekaligus menyampaikan cerita. Fokus kami adalah menghasilkan karya elegan, autentik, dan penuh emosi, baik untuk acara pernikahan, prewedding, wisuda, hingga konten cinematic.
+      Kami adalah vendor fotografi dan videografi yang fokus mengabadikan momen sekaligus menyampaikan cerita. Karya kami elegan, autentik, dan penuh emosi untuk pernikahan, prewedding, wisuda, hingga konten cinematic.
     </p>
   </section>
 
@@ -41,12 +47,15 @@
   <section id="portfolio" class="py-16 px-6 md:px-20 bg-white">
     <h2 class="text-3xl font-bold text-center mb-10">Portfolio Karya</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Wedding Best 3 -->
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding1.jpg?raw=true" alt="Wedding 1" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding2.jpg?raw=true" alt="Wedding 2" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding3.jpg?raw=true" alt="Wedding 3" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <!-- Engagement -->
       <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Engagement" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engegement%202.jpg?raw=true" alt="Engagement" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engegement%202.jpg?raw=true" alt="Engagement 2" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
+      <!-- Tingkeban -->
       <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" alt="Tingkeban" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" alt="Wisuda" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%202.jpg?raw=true" alt="Wisuda" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/pelengkap%20%20(3).jpg?raw=true" alt="Pelengkap" class="rounded-3xl shadow-xl portfolio-img transition-transform duration-500"/>
     </div>
   </section>
 
@@ -55,9 +64,9 @@
     <h2 class="text-3xl font-bold text-center mb-10">Paket & Harga</h2>
     <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 
-      <!-- Paket Engagement -->
+      <!-- Engagement -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Engagement" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Engagement"/>
         <h3 class="text-2xl font-semibold mb-2">Engagement Paket – Rp900.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer + 1 Videografer</li>
@@ -67,9 +76,9 @@
         </ul>
       </div>
 
-      <!-- Paket Wedding Silver Cinematic -->
+      <!-- Wedding Silver Cinematic -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding.jpg?raw=true" alt="Wedding" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding1.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Wedding"/>
         <h3 class="text-2xl font-semibold mb-2">Wedding Silver Cinematic – Rp1.000.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Videografer Profesional</li>
@@ -80,9 +89,9 @@
         </ul>
       </div>
 
-      <!-- Paket Wedding Foto -->
+      <!-- Wedding Foto Paket -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding.jpg?raw=true" alt="Wedding Foto" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wedding2.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Wedding Foto"/>
         <h3 class="text-2xl font-semibold mb-2">Wedding Foto Paket – Rp800.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
@@ -92,10 +101,9 @@
           <li>1 Album foto (hardcover)</li>
         </ul>
       </div>
-
-      <!-- Paket Prewedding -->
+      <!-- Prewedding -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/prewedding.jpg?raw=true" alt="Prewedding" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/prewedding.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Prewedding"/>
         <h3 class="text-2xl font-semibold mb-2">Prewedding – Rp1.200.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer + 1 Videografer</li>
@@ -106,9 +114,9 @@
         </ul>
       </div>
 
-      <!-- Paket Wisuda -->
+      <!-- Wisuda -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" alt="Wisuda" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/wisuda%201.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Wisuda"/>
         <h3 class="text-2xl font-semibold mb-2">Wisuda Paket – Rp750.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
@@ -118,9 +126,9 @@
         </ul>
       </div>
 
-      <!-- Paket Tingkeban -->
+      <!-- Tingkeban -->
       <div class="price-card p-6 shadow-lg">
-        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" alt="Tingkeban" class="rounded-xl mb-4 shadow-md"/>
+        <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/tingkeban.jpg?raw=true" class="rounded-xl mb-4 shadow-md" alt="Tingkeban"/>
         <h3 class="text-2xl font-semibold mb-2">Tingkeban Paket – Rp650.000</h3>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>1 Fotografer</li>
@@ -129,7 +137,6 @@
           <li>Softcopy via Google Drive</li>
         </ul>
       </div>
-
     </div>
   </section>
 
@@ -144,6 +151,7 @@
       <a href="https://instagram.com/yusuf_sa_2" target="_blank" class="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 transition">Instagram</a>
       <a href="https://www.tiktok.com/@yusuf_sa_" target="_blank" class="bg-black text-white px-6 py-3 rounded-full shadow-md hover:bg-gray-800 transition">TikTok</a>
     </div>
+
     <!-- Bank & E-Wallet -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
