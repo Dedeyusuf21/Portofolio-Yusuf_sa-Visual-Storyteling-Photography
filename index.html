@@ -11,16 +11,17 @@ body { font-family: 'Inter', sans-serif; background-color: #111; color: #f4f4f4;
 h1,h2,h3 { font-family: 'Playfair Display', serif; }
 nav a { transition: 0.3s; }
 nav a:hover { color: #f67280; }
-.hero-bg { background: linear-gradient(135deg, #333, #555); padding-top: 80px; }
+.hero-bg { background: linear-gradient(135deg, #222, #444); padding-top: 80px; }
 .price-card { background-color: #222; border-radius: 1rem; padding: 1.5rem; transition: 0.3s; }
 .price-card:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
 .portfolio-img:hover { transform: scale(1.05); transition: 0.5s; }
-.portfolio-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem; text-align: center; margin-top: 0.5rem; }
+.portfolio-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.25rem; text-align: center; margin-top: 0.5rem; }
 .nav-link { font-weight: 500; }
 .text-bg { background-color: rgba(0,0,0,0.75); padding: 1rem; border-radius: 1rem; }
 .gradient-button { background: linear-gradient(to right, #f67280, #c06c84); }
 .gradient-button:hover { transform: scale(1.05); }
 .lenscap { border-radius: 50%; box-shadow: inset 0 0 30px rgba(0,0,0,0.7); }
+.bw { filter: grayscale(100%); }
 </style>
 </head>
 <body>
@@ -28,10 +29,7 @@ nav a:hover { color: #f67280; }
 <!-- Navbar -->
 <nav class="fixed w-full z-50 bg-black text-white shadow-lg">
   <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-    <div class="flex items-center gap-4">
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/LOGO%20DEDE%202.png?raw=true" class="w-48 h-auto"/>
-      <span class="font-bold text-2xl">Yusuf_sa</span>
-    </div>
+    <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/LOGO%20DEDE%202.png?raw=true" alt="Logo Yusuf_sa" class="h-16">
     <div class="flex gap-6">
       <a href="#home" class="nav-link">Home</a>
       <a href="#paket" class="nav-link">Pricelist</a>
@@ -55,18 +53,49 @@ nav a:hover { color: #f67280; }
 <section id="tentang" class="py-16 px-6 md:px-20 bg-gray-800">
   <h2 class="text-3xl font-bold text-center mb-6 text-white">Tentang Kami</h2>
   <p class="text-center max-w-3xl mx-auto text-gray-200">
-  Kami adalah Yusuf_sa Visual & Cinematic Storytelling, vendor fotografi dan videografi yang berdiri dengan semangat untuk mengabadikan momen sekaligus menyampaikan cerita. Fokus kami adalah menghasilkan karya elegan, autentik, dan penuh emosi, baik untuk acara pernikahan, prewedding, wisuda, hingga konten cinematic.
+    Kami adalah Yusuf_sa Visual & Cinematic Storytelling, vendor fotografi dan videografi yang berdiri dengan semangat untuk mengabadikan momen sekaligus menyampaikan cerita. Fokus kami adalah menghasilkan karya elegan, autentik, dan penuh emosi, baik untuk acara pernikahan, prewedding, wisuda, hingga konten cinematic.
   </p>
 </section>
 
+<!-- Layanan Kami -->
+<section id="layanan" class="py-16 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-3xl font-bold text-center mb-10 text-white">Layanan Kami</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-gray-200">
+    <div>
+      <h3 class="text-xl font-semibold mb-2">Wedding & Prewedding</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Dokumentasi akad & resepsi</li>
+        <li>Foto candid & cinematic video</li>
+        <li>Drone & highlight video</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2">Event Documentation</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Wisuda indoor & outdoor</li>
+        <li>Engagement & tingkepan</li>
+        <li>Corporate & private event</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold mb-2">Creative Content</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Cinematic short film</li>
+        <li>Instagram reels & TikTok content</li>
+        <li>Yearbook & graduation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- Portfolio -->
-<section id="portfolio" class="py-16 px-6 md:px-20 bg-gray-900">
+<section id="portfolio" class="py-16 px-6 md:px-20 bg-gray-800">
   <h2 class="text-3xl font-bold text-center mb-10 text-white">Portfolio</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
     <!-- Wedding -->
     <div>
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Wedding 1" class="rounded-3xl shadow-xl portfolio-img"/>
-      <div class="portfolio-title">Wedding 1</div>
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engagement%201.jpg?raw=true" alt="Wedding 1 BW" class="rounded-3xl shadow-xl portfolio-img bw"/>
+      <div class="portfolio-title">Wedding 1 BW</div>
     </div>
     <div>
       <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/engegement%202.jpg?raw=true" alt="Wedding 2 Lenscap" class="rounded-3xl shadow-xl portfolio-img lenscap"/>
@@ -108,51 +137,82 @@ nav a:hover { color: #f67280; }
 </section>
 
 <!-- Paket & Pricelist -->
-<section id="paket" class="py-16 px-6 md:px-20 bg-gray-800">
+<section id="paket" class="py-16 px-6 md:px-20 bg-gray-900">
   <h2 class="text-3xl font-bold text-center mb-10 text-white">Paket & Harga</h2>
   <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    <!-- Tambahkan paket Wedding, Engagement, Tingkeban, Wisuda lengkap seperti sebelumnya -->
+    <!-- Wedding Silver -->
+    <div class="price-card">
+      <h3 class="text-xl font-bold mb-3">Wedding Silver Cinematic – Rp1.000.000</h3>
+      <ul class="list-disc pl-6 space-y-1 text-gray-200">
+        <li>1 Videografer Profesional</li>
+        <li>Durasi syuting: 6 jam (akad & resepsi / sesuai jadwal)</li>
+        <li>Cinematic Highlight Video (3–4 menit)</li>
+        <li>Softcopy via Google Drive</li>
+        <li>Maksimal 1 kali revisi ringan</li>
+      </ul>
+    </div>
+    <!-- Wedding Gold -->
+    <div class="price-card">
+      <h3 class="text-xl font-bold mb-3">Wedding Gold Cinematic – Rp1.300.000</h3>
+      <ul class="list-disc pl-6 space-y-1 text-gray-200">
+        <li>Durasi syuting: 10 jam (akad & resepsi / sesuai jadwal)</li>
+        <li>Cinematic Highlight Video (4–5 menit)</li>
+        <li>Softcopy via Google Drive</li>
+        <li>Maksimal 2 kali revisi ringan</li>
+      </ul>
+    </div>
+    <!-- Foto Wedding 800k -->
+    <div class="price-card">
+      <h3 class="text-xl font-bold mb-3">Paket Foto Wedding – Rp800.000</h3>
+      <ul class="list-disc pl-6 space-y-1 text-gray-200">
+        <li>1 Fotografer</li>
+        <li>Dokumentasi 3–6 jam</li>
+        <li>80 foto pilihan edit premium + cetak 80x4R</li>
+        <li>1 foto 10R bingkai eksklusif</li>
+        <li>1 Album foto hardcover</li>
+      </ul>
+    </div>
+    <!-- Foto Wedding 1500k -->
+    <div class="price-card">
+      <h3 class="text-xl font-bold mb-3">Paket Foto Wedding – Rp1.500.000</h3>
+      <ul class="list-disc pl-6 space-y-1 text-gray-200">
+        <li>1 Fotografer</li>
+        <li>Dokumentasi 6–10 jam</li>
+        <li>120 foto pilihan edit premium + cetak 120x4R</li>
+        <li>1 foto 10R bingkai eksklusif</li>
+        <li>1 Album foto hardcover</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- Syarat & Ketentuan -->
-<section id="syarat" class="py-16 px-6 md:px-20 bg-gray-900">
+<!-- S&K -->
+<section id="syarat" class="py-16 px-6 md:px-20 bg-gray-800">
   <h2 class="text-3xl font-bold text-center mb-6 text-white">Syarat & Ketentuan</h2>
-  <div class="max-w-4xl mx-auto text-gray-300 space-y-4">
-    <!-- Masukkan semua S&K -->
+  <div class="max-w-4xl mx-auto text-gray-200 space-y-3">
+    <p>1. Booking resmi dilakukan setelah klien melakukan pembayaran DP minimal 30%.</p>
+    <p>2. Perubahan jadwal minimal 7 hari sebelumnya.</p>
+    <p>3. Biaya transportasi & akomodasi ditanggung klien jika event luar kota.</p>
+    <p>4. Durasi kerja sesuai paket, overtime dikenakan biaya tambahan.</p>
+    <p>5. Hasil foto & video dikirim via Google Drive/USB. Revisi video maksimal 2 kali ringan.</p>
+    <p>6. Semua hak cipta konten milik vendor. Untuk komersial wajib ada izin tertulis.</p>
+    <p>7. Vendor tidak bertanggung jawab atas force majeure (cuaca buruk, listrik padam, dll).</p>
+    <p>8. Vendor menjaga kerahasiaan data & etika profesional.</p>
   </div>
 </section>
 
 <!-- Pembayaran -->
-<section id="kontak" class="py-16 px-6 md:px-20 bg-gray-800 text-center">
+<section id="kontak" class="py-16 px-6 md:px-20 bg-gray-900 text-center">
   <h2 class="text-3xl font-bold mb-6 text-white">Pembayaran</h2>
-  <p class="mb-6 text-gray-200">Silakan transfer pembayaran ke salah satu rekening atau e-wallet berikut:</p>
-  <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
-    <div class="flex items-center gap-4 p-4 bg-gray-900 rounded-xl shadow hover:scale-105 transition">
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/MANDIRI.png?raw=true" class="w-12 h-12"/>
+  <p class="mb-6 text-gray-200">Silakan transfer ke salah satu rekening atau e-wallet:</p>
+  <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto mb-8">
+    <div class="flex items-center gap-4 p-4 bg-gray-800 rounded-xl shadow hover:scale-105 transition">
+      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/BCA.png?raw=true" alt="BCA" class="w-12 h-12"/>
       <div class="text-left text-gray-200">
-        <p class="font-semibold">Mandiri</p>
+        <p class="font-semibold">BCA</p>
         <p>A/N: DEDE YUSUP</p>
-        <p>No: 1234567890</p>
+        <p>No: 1852234088</p>
       </div>
     </div>
-    <div class="flex items-center gap-4 p-4 bg-gray-900 rounded-xl shadow hover:scale-105 transition">
-      <img src="https://github.com/Dedeyusuf21/Portofolio-Yusuf_sa-Visual-Storyteling-Photography/blob/main/portofolio/asets/logo/SEA%20BANK%20.png?raw=true" class="w-12 h-12"/>
-      <div class="text-left text-gray-200">
-        <p class="font-semibold">SeaBank</p>
-        <p>A/N: DEDE YUSUP</p>
-        <p>No: 9876543210</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Booking -->
-<section id="booking" class="py-16 px-6 md:px-20 bg-gray-900 text-center">
-  <h2 class="text-3xl font-bold mb-6 text-white">Booking</h2>
-  <p class="text-gray-200 mb-4">Silakan hubungi kami melalui WhatsApp atau media sosial untuk melakukan booking:</p>
-  <a href="https://wa.me/6285895889997" class="gradient-button text-white px-8 py-3 rounded-full shadow-lg">WhatsApp</a>
-</section>
-
-</body>
-</html>
+    <div class="flex items-center gap-4 p-4 bg-gray-800 rounded-xl shadow hover:scale-105 transition">
+      <img src="https://github.com/Ded
